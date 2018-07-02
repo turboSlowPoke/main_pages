@@ -9,6 +9,7 @@
   <title>ТВ не скажет</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -19,7 +20,7 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container">
       <a class="navbar-brand" href="#" >
         <strong>
@@ -32,24 +33,24 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">Главаная </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about">О нас</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="/contacts">Контакты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/faq">FAQ
+            <a class="nav-link active" href="/faq">FAQ
               <br> </a>
           </li>
         </ul>
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item pr-lg-3">
             <a href="#" class="nav-link"  title="Авторизоваться через Google" data-toggle="tooltip" data-placement="bottom">
-              <i class="fa fa-google" aria-hidden="true"></i>
+              <i class="fab fa-google" aria-hidden="true"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -62,87 +63,55 @@
     </div>
   </nav>
 
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="card">
-            <div class="card-header"><h3>Ваши работы</h3></div>
-            <div class="card-body">
-              <table class="table homeworks_table">
-                <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-                </thead>
-                <tbody>
+<main class="pt-5 mt-5">
+  <div class="container">
+    <div class="row">
+        <div class="card">
+          <div class="card-header text-center">
+            <i class="fas fa-chalkboard-teacher text-info mr-3 " aria-hidden="true"></i>Домашняя работа
+          </div>
+          <div class="card-body">
+            <div class="table-wrapper-2">
+              <table class="table table-responsive-md">
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
+                  <td>Kate</td>
+                  <td>Moss</td>
+                  <td>USA</td>
+                  <td><a class="" href="#" title="Удалить! Внимание удаление не отменить!" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-times text-danger" aria-hidden="true"></i></a></td>
                 </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-                </tbody>
               </table>
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
+    </div>
+    <div class="row mt-3">
+      <div class="card">
+        <div class="card-header"> Текст</div>
+        <div class="card-body">бла бла бла бла бла бла бла бла бла бла бла бла бла бла
+          бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла бла </div>
       </div>
     </div>
+    <div class="row">
+      <div class="card mt-3">
+        <div class="card-header">Изображения</div>
+        <div class="card-body">
+          <img class="img-fluid m-1 border" src="img/head_TV.png">
+          <img class="img-fluid m-1" src="img/head_TV.png">
+          <img class="img-fluid m-1" src="img/head_TV.png">
+        </div>
+      </div>
+    </div>
+  </div>
 
-  </main>
-  <!--Main layout-->
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="#" role="button">Присоединиться &nbsp; &nbsp; &nbsp; &nbsp;
-        <i class="fa fa-sign-in ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-    <hr class="my-4">
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="#">
-        <i class="fa fa-vk mr-3"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-youtube mr-3"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-telegram mr-3"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-instagram mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-    <!--Copyright-->
+</main>
+
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn fixed-bottom">
     <div class="footer-copyright py-3"> © 2018 Copyright:
       <a href="#"> ontvnotshow.com </a>
     </div>
-    <!--/.Copyright-->
   </footer>
-  <!--/.Footer-->
-  <!-- SCRIPTS -->
+
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -153,13 +122,11 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
+<script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     })
-  </script>
+</script>
 </body>
 
 </html>
